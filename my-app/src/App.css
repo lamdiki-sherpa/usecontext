@@ -1,0 +1,278 @@
+/*===================== navbar================*/
+
+body{
+ 
+  position: relative;
+  width:100%;
+  background-image: url('sunv.jpg');
+  
+}
+nav{
+  width:100vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:5px;
+
+  
+}
+.signup{
+  background-color: #686765;
+  color: white;
+  border: none;
+  margin-right: 30px;
+  border-radius: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.nav-header h3{
+
+  position: absolute;
+  /* left:40px; */
+  top: 20px;
+  left: 60px;
+  font-style: italic;
+   color:#742B0A;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+.nav-links{
+/* position: absolute;
+left:200px;
+top: 20px; */
+display: flex;
+margin-top: 20px;
+
+}
+.nav-links li{
+  list-style: none;
+  margin-left:40px;
+}
+.btn{
+  display: none;
+ 
+
+}
+.linkr{
+  font-size:13px;
+  margin-right: 3px;
+}
+.link-btn{
+  border: none; 
+   background-color: #EFEDE0;
+   opacity:0.2px;
+  font-size: 20px;
+  color:rgb(163, 157, 157);
+  text-transform: capitalize;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*=============media-query==========*/
+@media screen and (max-width:600px) {
+  .nav{
+    min-width:700px;
+    margin-left: 50px;
+  }
+ 
+  .nav-links{
+    display: none;
+
+  }
+
+  .btn{
+    display:block;
+    background-color: #282c34;
+    color: white;
+    font-size:18px;
+    margin-right: 50px;
+    margin-top: 20px;
+   
+    
+    
+  }
+  
+  .signup{
+    display: none;
+  }
+  .hero{
+    min-width:600px;
+  
+  }
+  .hero-center{
+    margin-left: 50px;
+  }
+  .discription{
+    width: 300px;
+  }
+  .img-description{
+    width:180px;
+    margin-top:40px;
+   
+  }
+  .img-description img{
+    
+   height:50px;
+   width:90px;
+   margin-right:50px;
+  
+  }
+  .sidebar{
+    z-index: 1;
+    height:100%;
+    width:100%;
+    background-color: #282c34;
+    color: #ffffff;
+    position:fixed;
+    right:0;
+    top: 0;
+    padding: 20px;
+  }
+  
+}
+  
+@media screen and (max-width:400px) {
+  .nav{
+    min-width:700px;
+    margin-left: 50px;
+  }
+ 
+  .nav-links{
+    display: none;
+
+  }
+
+  .btn{
+    display:block;
+    background-color: #282c34;
+    color: white;
+    font-size:18px;
+    margin-top: 30px;
+    margin-right:80px;
+   
+    
+    
+  }
+  
+  .signup{
+    display: none;
+  }
+  .hero{
+    min-width:600px;
+    margin: 20px auto;
+  
+  }
+  /* .hero-center{
+    
+  } */
+  .discription{
+    min-width:620px;
+    
+    
+  }
+  .img-description {
+    display: none;
+    position: absolute;
+    top:650px;
+     min-width:600px ;
+     
+      
+  }
+  
+  .sidebar{
+    z-index: 1;
+    height:100%;
+    width:100%;
+    background-color: #282c34;
+    color: #ffffff;
+    position:fixed;
+    right:0;
+    top: 0;
+    padding: 20px;
+  }
+  
+}
+  
+
+
+/* -----------------------------Hero component---------------------- */
+.hero{
+max-width: 1120px;
+ margin: 100px auto;
+
+ 
+
+}
+.discription{
+  margin-top:-10px;
+  text-align: justify;
+}
+.discription h1{
+  color:rgb(104, 101, 101);
+  font-family:'Courier New', Courier, monospace;
+}
+.discription p{
+  color:rgb(128, 124, 124);
+  font-size: 19px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.img-description img{
+  height:400px;
+  width: 350px;
+  opacity: 0.9;
+  margin-left: 30px;
+  border:2px solid #FFCF00;
+  margin-top: 40px;
+}
+
+/* .read{
+background-color: #686765;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+/* ----------------sidebar component ------------------------ */
+
+
+.hide{
+  display: none;
+}
+.icon{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* ---------------------------submenu component--------------------- */
+.submenu{
+  height:80px;
+  padding: 10px;
+  background-color:#353534;
+  color:#ffffff;
+  opacity: 0.8;
+  position: absolute;
+  top: 65px;
+  left:33% ;
+  border-radius: 5px;
+ }
+ .submenu::after{
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #353534 ;
+  border-top: 10px solid transparent;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent ;
+  position: absolute;
+  left:20% ;
+  top:-18px;
+ }
+.linkr{
+  text-decoration: none;
+  color: white;
+}
+.submenu-hide{
+  display: none;
+}
